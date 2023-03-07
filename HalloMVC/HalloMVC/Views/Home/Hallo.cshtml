@@ -1,0 +1,10 @@
+﻿@model int;
+
+<h1>Das doppelte ist @Html.DisplayFor(model => model)</h1>
+
+@for (int i = 0; i < 12; i++)
+{
+    <h1>Zahl ist @(i+Model)</h1>
+    
+}
+
