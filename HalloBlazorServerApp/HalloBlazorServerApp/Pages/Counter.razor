@@ -1,0 +1,23 @@
+﻿@page "/counter"
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<P>@DateTime.Now.AddMinutes(-43875687)</P>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+<button @onmousemove="IncrementCount">move mich</button>
+
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount+=6;
+    }
+}
