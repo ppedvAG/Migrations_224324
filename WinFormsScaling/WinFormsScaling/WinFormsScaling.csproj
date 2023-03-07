@@ -5,6 +5,7 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <UseWindowsForms>true</UseWindowsForms>
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+    <UserSecretsId>ebe077d9-b326-4c8d-9ba0-838bcbf4248a</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

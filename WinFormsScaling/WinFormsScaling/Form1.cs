@@ -19,12 +19,18 @@ namespace WinFormsScaling
             InitializeComponent();
 
             IConfiguration config = new ConfigurationBuilder().AddJsonFile("appsettings.json", true)
-                                                              .AddUserSecrets(Assembly.GetExecutingAssembly())
+                                                              .AddUserSecrets("ebe077d9-b326-4c8d-9ba0-838bcbf4248a")
                                                               .Build();
 
             bool isCool = config.GetSection("IsCool").Value == "True";
             var conStrings = config.GetSection("ConnectionStrings");
             var conStringDb1 = conStrings.GetSection("db1").Value;
+          
+
+            ConfigurationManager cm = new ConfigurationManager();
+            cm.AddUserSecrets("ebe077d9-b326-4c8d-9ba0-838bcbf4248a");
+            cm.GetSection("IsCool").Value = "AAAA";
+            
 
             if (isCool)
             {
